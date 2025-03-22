@@ -1,4 +1,3 @@
-from debug_toolbar.toolbar import debug_toolbar_urls
 from django.urls import path
 
 from .views import (
@@ -6,6 +5,9 @@ from .views import (
     CarListView, CarDetailView,
     DriverListView, DriverDetailView
 )
+
+import debug_toolbar
+
 
 urlpatterns = [
     path("", index, name="index"),
